@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title></title>
+
+    <style>
+      .skeleton_screen-wrap {
+        height: 100vh;
+      }
+      .skeleton_screen-percentage-height {
+        height: 100%;
+      }
+      .skeleton_screen_position-item {
+        position: absolute;
+        left: 0;
+        width: 100%;
+      }
+      .skeleton_screen-location {
+        position: relative;
+      }
+      .skeleton_screen-item-bg {
+        background-color: #ccc;
+      }
+      .skeleton_screen-header {
+        background-color: #fff;
+        height: 90px;
+        top: 0px;
+      }
+      .skeleton_screen-content {
+        width: 1480px;
+        margin: auto;
+      }
+      .skeleton_screen-content-banner {
+        height: 240px;
+        border-bottom: 20px solid #fff;
+        top: 0px;
+      }
+      .skeleton_screen-banner-top {
+        top: 90px;
+      }
+      .skeleton_screen-content-space {
+        width: 20px;
+        top: 0px;
+        left: 220px;
+        background-color: #fff;
+      }
+      .skeleton_screen-footer {
+        background-color: #545454;
+        height: 89px;
+        bottom: 0px;
+      }
+      .skeleton_screen-light {
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(
+            -45deg,
+            transparent 30%,
+            transparent,
+            rgba(255, 255, 255, 0.5),
+            transparent 70%
+          )
+          no-repeat;
+        background-size: 200% 200%;
+        background-position: 200% 200%;
+        animation: skeleton-cross 3s infinite;
+      }
+      @keyframes skeleton-cross {
+        from {
+        }
+        to {
+          background-position: -100% -100%;
+        }
+      }
+      @media (max-width: 1479px) {
+        .skeleton_screen-content {
+          width: 1200px;
+        }
+        .skeleton_screen-content-space {
+          left: 180px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <noscript>
+      <strong
+        >We're sorry but corp-3.0 doesn't work properly without JavaScript
+        enabled. Please enable it to continue.</strong
+      >
+    </noscript>
+    <div id="app">
+      <div class="skeleton_screen-wrap skeleton_screen-location">
+        <div
+          class="skeleton_screen-content skeleton_screen-item-bg skeleton_screen-location skeleton_screen-percentage-height"
+        >
+          <div
+            class="skeleton_screen_position-item skeleton_screen-content-space skeleton_screen-percentage-height"
+          ></div>
+        </div>
+        <div
+          class="skeleton_screen-content-banner skeleton_screen-item-bg skeleton_screen-banner-top skeleton_screen_position-item"
+        ></div>
+        <div class="skeleton_screen-header skeleton_screen_position-item"></div>
+        <div class="skeleton_screen-footer skeleton_screen_position-item"></div>
+        <div class="skeleton_screen_position-item skeleton_screen-light"></div>
+      </div>
+    </div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
